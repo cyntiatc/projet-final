@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#fafafa;
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+img{
+    width: 250px;
+}
+h4{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.search_bar{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input{
+    width: 75%;
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #0876B9;
+}
+button{
+    cursor: pointer;
+    padding: 8px;
+    background-color: #0876B9;
+    color: #fff;
+    border: 1px solid #0876B9;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color: transparent;
+    color:#000;
+}
+#button_code_bar{
+    width: 25%;
+}
+#box{
+    border:1px solid #0876B9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#pdf_box{
+    width: 100%;
+}
+#pdf_box button{
+    width: 100%;
+
+}
+.error{
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    width: 100%;
+    background-color:#EE6E56;
+    color:#fff ;
+
+}  
