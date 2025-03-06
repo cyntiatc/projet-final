@@ -79,7 +79,7 @@ main{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    /* background: linear-gradient(-360deg, rgba(8,118,185,.5), white);   */
+    background: linear-gradient(-360deg, rgba(8,118,185,.5), white);   
     
 }
 .section-2 .content{
