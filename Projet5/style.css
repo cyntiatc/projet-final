@@ -14,18 +14,23 @@ body{
 }
 /* stylé le contenueur pour les entrés */
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #fff;
-    width: 350px;
+    width: 60%;
+    min-height: 50vh;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: body 1.5s ease-in-out;
 }
 form{
     display: flex;
     flex-direction: column;
 }
 input{
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #0876B9;
     outline: 0;
     border-radius: 4px;
@@ -85,6 +90,16 @@ h3{
     position: relative;
     left: -7px;
     content: "✓";
+}
+@keyframes body{
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
 }
 
 

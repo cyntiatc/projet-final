@@ -1,59 +1,65 @@
-
-body{
-    background-color:#fafafa;
-    
+body {
+  background-color: #fafafa;
+  overflow: hidden;
 }
 .container{
-    margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .inside-container{
+  width: 400px;
+  height: 500px;
 }
 h1{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.calc{
-    height: 370px;
-    background-color: #3d4543;
-    padding: 10px;
-    border-radius: 20px;
-    display: inline-block;
+.inside-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:95%;
+  height: 83%;
 }
-#answer{
-    background-color: #fff;
-    width: 370px;
-    height: 80px;
-    color: #000;
-    border-radius: 10px;
-    padding-right: 10px;
-    margin-bottom: 18px;
-    text-align: right;
-    letter-spacing: 1px;
+form #answer{
+  width: 98%;
+  height:100px;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-align: right;
 }
-input{
-    font-size: 30px;
-    width: 65px;
-    height: 55px;
-    color:#000;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 5px;
-    outline: none;
-    border: 0px solid;
+.inside-container form .calc{
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: #000;
+  display: grid;
+  gap: 1.5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 20px;
 }
-input[type="button"]:hover{
-    cursor: pointer;
-    background-color: #fff;
-    color: #000;
-
+.inside-container form .calc input{
+  font-size: 25px;
+  border-radius: 10px;
 }
-.btn-red{
-    background-color: #EE6E56;
-}
-.btn-blue{
-    background-color:  #0876B9;
+input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
 }
 
-
+.btn-red {
+  background-color: #ee6e56;
+}
+.btn-blue {
+  background-color: #0876b9;
+}
 
 
 

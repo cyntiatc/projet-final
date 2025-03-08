@@ -22,6 +22,7 @@ section{
     padding: 20px;
     flex-direction: column; 
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    animation: body 1.5s ease-in-out;
 }
 img{
     width: 250px;
@@ -82,4 +83,14 @@ button:hover{
     background-color:#EE6E56;
     color:#fff ;
 
+}
+@keyframes body{
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
 }  

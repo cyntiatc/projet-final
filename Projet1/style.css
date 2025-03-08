@@ -14,21 +14,24 @@ body {
   background-color: #fafafa;
 }
 .chronometre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fff;
   padding: 10px;
   border-radius: 6px;
-  width: 400px;
+  width: 60%;
+  min-height:50vh;
   text-align: center;
-  animation: anim-chronometre 1s ease-in-out;
+  animation: anim-chronometre 1.5s ease-in-out;
 }
 .tim {
-  margin: auto;
   width: 100%;
   border: 1px solid #0876b9;
   border-radius: 6px;
   padding: 5px 0;
   text-align: center;
-  font-size: 35px;
+  font-size: 3dvw;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -44,7 +47,7 @@ body {
 button {
   background-color: #0876b9;
   color: #fff;
-  font-size: 15px;
+  font-size: 3dvw;
   padding: 10px 20px;
   border-radius: 5px;
   width: 31%;
@@ -56,16 +59,7 @@ button {
 button:hover {
   transform: scale(0.9);
 }
-/* @keyframes anim-chronometre{
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
+
 @keyframes anim-chronometre {
   from {
     transform: translateX(-100%);

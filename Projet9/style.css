@@ -47,6 +47,10 @@ input , button{
     border: 0;
     outline: 0;
     width: 100%;
+    
+}
+input{
+    font-size: 9px;
 }
 input{
     background-color: #f5efef;

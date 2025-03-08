@@ -42,4 +42,4 @@ function shortLinkFunct() {
     short.style.display = "none";
   }
 }
-//Fin
+
