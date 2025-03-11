@@ -3,6 +3,7 @@ let profile = document.querySelector(".profile");
 let frame = document.getElementById("frame");
 let logo = document.querySelector(".logo");
 
+
 lienProjet.forEach((element) => {
   element.addEventListener("click", function (event) {
     event.preventDefault();
@@ -90,3 +91,4 @@ document.querySelector("#sidenav").addEventListener("click", () => {
   burger.classList.remove("active");
   ulMenu.classList.remove("active");
 });
+
